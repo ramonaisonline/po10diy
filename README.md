@@ -107,6 +107,7 @@ Notes about the PCB
 - Wait a minute or two for the paste to melt and attach the switches
 
 ### 8. Let the PCB cool
+- It's hot! Be careful!
 
 ### 9. Flip the board over and solder the 12 and 16 pin female header strips to the underside of the board
 - The microcontroller will go on the back
@@ -128,12 +129,14 @@ Notes about the PCB
 - You may have to bend the side tabs in slightly to get them to align with the holes
 - Double check the tilt of the potentiometers by looking at them from the side. It's easy for them to slightly lean one direction or the other.
 
-### 14. At this point, you can test the device with an external projector / monitor / TV and verify that the buttons and pots all work as expected
+### 14. At this point, you can test!
+- Upload the code to the Feather using the procedure below to test the device with an external projector / monitor / TV and verify that the buttons and pots all work as expected
 - This step is optional, but it's much easier to fix any issues with the diodes / resisotrs / capacitors now, before you solder the display on
 - At a minimum, check the connections with a thorough visual inspection and maybe even with a multimeter
 - Make sure there are no shorts from excess solder, and that all the components are fully and securely attached
 
-### 15. Solder the male header to the display but do NOT solder it to rest of the PCB yet! That will be our final step because it depends on a few things being aligned first.
+### 15. Solder the male header to the display
+- But do NOT solder it to rest of the PCB yet! That will be our final step because it depends on a few things being aligned first.
 
 ### 16. File down the right inner corner of the display to fit around Pot B
 - Note that the lower mounting points of the display have a slight inner radius where they meet the main body of the display PCB
