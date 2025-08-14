@@ -63,6 +63,8 @@ Notes about the PCB
 
 ## Assembly steps
 
+### Cut or file down any rough edges on the PCB
+
 1. Cut or file down any rough edges on the PCB
   - Mine came with little spiky protrusions from the manufacturing process, and I just snipped and filed them down
 2. Unpackage and organize your parts
