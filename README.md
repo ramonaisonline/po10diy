@@ -170,6 +170,8 @@ I recommend follow Adafruit's detailed setup steps:
   - Instead I follow the manual bootloader steps at the bottom of that page, and it works very reliably
   - That does make it slightly more annoying to use the serial monitor because sometimes you have to switch the selected board in the Arduino IDE and close / open the serial monitor panel to get messages to come through
   - All that is to say, YMMV, and try it both ways!
+- [All about the PicoDVI library for the Feather](https://learn.adafruit.com/picodvi-arduino-library-video-out-for-rp2040-boards)
+- [Drawing shapes with Adafruit GFX](https://learn.adafruit.com/adafruit-gfx-graphics-library/graphics-primitives)
 
 # Using it
 TODO: Quick user manual
