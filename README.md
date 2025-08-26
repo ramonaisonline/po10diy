@@ -59,7 +59,7 @@ I estimate that these cost around $100 to build. The most expensive parts of thi
 
 
 ## PCB
-Notes about the PCB
+TODO: Notes about ordering the PCB
 
 ## Assembly steps
 
@@ -152,9 +152,24 @@ Notes about the PCB
   - The already-soldered male header should be poking through the holes on the main PCB now
 
 ### 18. Solder the display
+- Almost done! You can test it now if you Like
 
-
+### 19. Install the battery
+- Now, you can plug in the LiPo battery and tuck it under the feather
+- It helps to secure it with a piece of tape or something like that
 
 # Software
+I've included the Arduino code that I used on my version, with all the drawing functions and everything. Feel free to modify it to your liking! I've included a template layer function in the layers.ino file along with some instructions about how to use the buttons / pot values / etc.
+
+## Flashing the Feather
+I recommend follow Adafruit's detailed setup steps:
+- [Setting up the Arduino IDE for RP2040 boards](https://learn.adafruit.com/adafruit-feather-rp2040-dvi/arduino-ide-setup)
+- [Loading sketches onto the Feather RP2040](https://learn.adafruit.com/adafruit-feather-rp2040-dvi/arduino-usage)
+  - The Feather has a UF2 bootloader which means it should be able to put itself into a special mode where it acts as a USB drive and the Arduino IDE can just drop a file on it to load the compiled sketch -- you SHOULD be able to just click "Upload" in the Arduino IDE and it should just work
+  - However, I've never gotten that to work consistently, for whatever reason
+  - Instead I follow the manual bootloader steps at the bottom of that page, and it works very reliably
+  - That does make it slightly more annoying to use the serial monitor because sometimes you have to switch the selected board in the Arduino IDE and close / open the serial monitor panel to get messages to come through
+  - All that is to say, YMMV, and try it both ways!
 
 # Using it
+TODO: Quick user manual
