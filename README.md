@@ -59,7 +59,9 @@ I estimate that these cost around $100 to build. The most expensive parts of thi
 
 
 ## PCB
-TODO: Notes about ordering the PCB
+You can order the board from [my shared project on OSHPark](https://oshpark.com/shared_projects/P2hzrhho) — as of August 2025 it costs $61 for 3 copies.
+
+If you'd prefer to order them from a different manufacturer, you can use the exported Gerber files in the PCB Files directory. I believe the existing exports will just work, but if they don't for whatever reason, I've also included the entire KiCAD project. You can find [instructions for exporting the files yourself here](https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-8) (for JLCPCB at least).
 
 ## Assembly steps
 
