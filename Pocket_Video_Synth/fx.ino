@@ -1,10 +1,10 @@
 void fillBlack() {
-  display.fillRect(40, 0, CW, H, BLACK);
+  display.fillRect(40, 0, CW, H, BLACK); // don't want to fillScreen bc of the UI!
   dvidisplay.fillScreen(BLACK);
 }
 
 void fillWhite() {
-  display.fillRect(40, 0, CW, H, WHITE);
+  display.fillRect(40, 0, CW, H, WHITE); // don't want to fillScreen bc of the UI!
   dvidisplay.fillScreen(WHITE);
 }
 
@@ -34,8 +34,7 @@ void bgColor() {
 void reflectHorizontally() {
   for (int i = 0; i < HALFCW; i++) {
     for (int j = 0; j < H; j++) {
-      display.drawPixel(HALFCW + i + 40, j, display.getPixel(HALFCW - i+40, j));
-      dvidisplay.drawPixel(HALFCW + i, j, dvidisplay.getPixel(HALFCW - i, j));
+      drawPixel(HALFCW + i, j, dvidisplay.getPixel(HALFCW - i, j));
     }
   } 
 }
@@ -43,8 +42,7 @@ void reflectHorizontally() {
 void reflectVertically() {
   for (int i = 0; i < CW; i++) {
     for (int j = 0; j < HALFH; j++) {
-      display.drawPixel(i + 40, HALFH + j, display.getPixel(i+40, HALFH - j));
-      dvidisplay.drawPixel(i, HALFH + j, dvidisplay.getPixel(i, HALFH - j));
+      drawPixel(i, HALFH + j, dvidisplay.getPixel(i, HALFH - j));
     }
   } 
 }
@@ -55,12 +53,9 @@ void reflectBoth() {
       int pSharp = display.getPixel(HALFCW - i + 40, HALFH - j);
       int pDVI = dvidisplay.getPixel(HALFCW - i, HALFH - j);
 
-      display.drawPixel(HALFCW + i + 40, HALFH + j, pSharp);
-      display.drawPixel(HALFCW + i + 40, HALFH - j, pSharp);
-      display.drawPixel(HALFCW - i + 40, HALFH + j, pSharp);
-      dvidisplay.drawPixel(HALFCW + i, HALFH + j, pDVI);
-      dvidisplay.drawPixel(HALFCW + i, HALFH - j, pDVI);
-      dvidisplay.drawPixel(HALFCW - i, HALFH + j, pDVI);
+      drawPixel(HALFCW + i, HALFH + j, pDVI);
+      drawPixel(HALFCW + i, HALFH - j, pDVI);
+      drawPixel(HALFCW - i, HALFH + j, pDVI);
     }
   } 
 }
