@@ -2,7 +2,9 @@
 A tiny video synthesizer in the pocket operator format
 
 ## Background
+I made this for the Teenage Engineering #po10diy contest — it's a two-color video synthesizer that has an onboard screen and battery for making video art on the go, and a DVI port so you can plug it into a projector!
 
+You can read the full story behind it on my website: [ramona.diy](https://ramona.diy/video-art/po-video)
 
 ## Making your own
 I'm not selling these, but this repository includes everything you'd need to make your own! And I encourage that! Please send me pics :)
@@ -174,6 +176,13 @@ I recommend follow Adafruit's detailed setup steps:
   - All that is to say, YMMV, and try it both ways!
 - [All about the PicoDVI library for the Feather](https://learn.adafruit.com/picodvi-arduino-library-video-out-for-rp2040-boards)
 - [Drawing shapes with Adafruit GFX](https://learn.adafruit.com/adafruit-gfx-graphics-library/graphics-primitives)
+
+## Remaining TODOs
+A few small features left to implement here!
+- The PO Sync feature (the PCB should be set up for it)
+- Creating / swapping between different sequences (the folder button)
+- Switch layers without triggering them via the layer buttons
+- Change tempo
 
 # Using it
 TODO: Quick user manual
